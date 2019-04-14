@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Chart.js Example</title>
+    <!-- import plugin script -->
+    <script src='static/Chart.min.js'></script>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <p>Choose the chart below:</p>
+    <ul>
+        <li><a href={{ url_for('chart') }}>Simple chart</a></li>
+        <li><a href={{ url_for('line_chart') }}>Line chart</a></li>
+        <li><a href={{ url_for('time_chart') }}>Time chart</a></li>
+    </ul>
+
+  </body>
+</html>
