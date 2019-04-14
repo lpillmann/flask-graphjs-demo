@@ -2,6 +2,8 @@
 
 Examples for using the Chart.js library in a Flask web application for creating line charts. Also, how to deploy the app with Zappa.
 
+Original code from [Patrick Kennedy](https://gitlab.com/patkennedy79/flask_chartjs_example/tree/master), explained in [his post](https://www.patricksoftwareblog.com/creating-charts-with-chart-js-in-a-flask-application/).
+
 ## Install dependencies
 Create env:
 ```
