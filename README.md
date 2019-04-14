@@ -50,3 +50,8 @@ To update deploy with new changes in code:
 ```
 zappa update
 ```
+
+To delete the services in AWS after testing:
+```
+zappa undeploy
+```
