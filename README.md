@@ -1,19 +1,50 @@
 ## Synopsis
 
-Examples for using the Chart.js library in a Flask web application for creating line charts.
+Examples for using the Chart.js library in a Flask web application for creating line charts. Also, how to deploy the app with Zappa.
 
-## How to Run
+## Install dependencies
+Create env:
+```
+virtualenv ~/chartjs
+```
+
+Activate env:
+```
+source ~/chartjs/bin/activate
+```
+
+Install from requirements file:
+```
+pip install -r requirements.txt
+```
+
+## How to run locally
+Activate env:
+```
+source ~/chartjs/bin/activate
+```
 
 In the top-level folder, run the development server:
-    % python app.py
+```    
+python app.py
+```
 
 Go to your favorite web browser and open:
     http://locallhost:5000
 
-## Key Python Modules Used
+## Deploy with Zappa
 
-- Flask - web framework
-- Jinga2 - templating engine
+If it is the first time, configure Zappa:
+```
+zappa init
+```
 
-This application is written using Python 3.4.3.
+Once configured:
+```
+zappa deploy
+```
 
+To update deploy with new changes in code:
+```
+zappa update
+```
